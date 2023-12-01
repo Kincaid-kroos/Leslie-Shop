@@ -2,7 +2,8 @@
 
 const Rules = () => {
   return (
-    <div>Rules</div>
+    <div className="text-blue-500 bg-gray-200">Hello, Tailwind CSS!</div>
+
   )
 }
 
