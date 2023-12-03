@@ -1,47 +1,44 @@
+//import { FaStar } from 'react-icons/fa';
 
 
 const Home = () => {
   return (
-   
-    <div id="home" className="flex flex-col-reverse md:flex-row items-center px-6 mt-0 md:mt-10  md:space-x-48 space-x-15 space-y-2 md:space-y-0 ">
-      {/*item a*/}
-      <div className="flex flex-col md:mt-0 space-y-5 md:w-1/2">
-      <h1 className="text-[#ff7b00] md:text-5xl text-3xl font-bold text-center md:text-left">
-            Welcome to Tassie`s Berbaque, Mombasa
-          </h1>
-
-          <p className="text-[#16B97A] uppercase font-bold text-xl md:text-5xl text-center md:text-left">
-            We Serve 
-          </p>
-          <p className="font-semibold text-md text-center md:text-left  uppercase md:text-7xl">
-            The best Dishes
-          </p>
-          <p className="text-gray-400 my-4 text-sm md:text-xl font-semibold  w-[90%] text-center md:text-left">
-          Explore a variety of barbecue sauces, from sweet and tangy to spicy and smoky <br/> Enjoy your meal!!!
-          </p>
-           <div className="flex md:gap-24 gap-8">
-            <button className=" bg-[#7ab916] flex gap-2 font-normal md:font-semibold cursor-pointer rounded-tr-3xl rounded-bl-3xl hover:bg-[#FFA300] transition-all duration-300 text-white md:text-md text-sm py-2  px-4 md:px-8 md:py-4 ">
-              <p>Follow Us on Instagram</p> 
-              
-            </button>
-
-            <div className="flex quicksand items-center gap-2">
-              <a href="https://www.instagram.com/k_i_n_c_a_i_d_">
-            
-              </a>
-              <p>Instagram</p>
-            </div>
-
-      </div>
-      </div>
-      {/*item b*/}
-      <div className="md:w-1/2 "> 
-      <img  alt="hero img" className="md:h-[480px] md:w-[420px] rounded-tr-3xl rounded-bl-3xl"/>
-        
-      </div>
-      
-    </div>
+    <div>
     
+    <div className="bg-[#0f0f0f] mx-3">
+      {/*item a*/}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-white ">Welcome to CVV store</h1>
+        <p className=" text-[#706767] font-semibold">We are happy to see you here!</p>
+        <button className="py-2 px-4 bg-orange-800 text-white rounded-full mt-4 hover:bg-[#5c7731] transition duration-300 ease-in-out">
+          <span>Go shopping --&gt;</span>
+        </button>
+      </div>
+          {/*item b*/}
+          <div className="flex space-x-7 items-center">
+              {/*item b 1*/}
+              <div>
+              <label className="text-orange-800">43</label>
+              <p>Products Sold</p>
+              </div>
+              {/*item b 2*/}
+              <div>
+              <label className="text-orange-800 font-extrabold h-10 w-10">43</label>
+              <p>Customers</p>
+              </div>
+              {/*item b 3*/}
+              <div>
+              <label className="text-orange-800">43</label>
+              <p>Products Sold</p>
+              </div>
+
+          </div>
+      </div> 
+
+
+
+
+      </div>   
   )
 }
 
