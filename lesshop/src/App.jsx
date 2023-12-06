@@ -6,14 +6,14 @@ import Navbar from './Components/Hocs/navbar.jsx';
 
 import Home from './Components/Pages/Homepages/home.jsx';
 import About from './Components/Pages/Homepages/About.jsx';
-import Guide from './Components/Pages/Homepages/guide.jsx';
+import Guide from './Components/Pages/Homepages/Guide.jsx';
 import HowToOrder from './Components/Pages/Homepages/howTorder.jsx';
-import Rules from './Components/Pages/Homepages/rules.jsx';
+import Rules from './Components/Pages/Homepages/Rules.jsx';
 import Shop from './Components/Pages/Homepages/shop.jsx';
 
 import Add from './Components/Pages/Purchasepages/add.jsx';
-import Login from './Components/Pages/Purchasepages/login.jsx';
-import Register from './Components/Pages/Purchasepages/register.jsx';
+
+
 import Purchase from './Components/Pages/Purchasepages/purchase.jsx';
 import Current from './Components/Pages/Purchasepages/current.jsx';
 
@@ -21,11 +21,12 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <TopItems />
         <Navbar />
-
+        
+        
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -35,8 +36,6 @@ const App = () => {
           <Route path='/shop' element={<Shop />} />
           <Route path='/balance' element={<Add />} />
           <Route path='/cart' element={<Current />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
           <Route exact path='/history' element={<Purchase />} />
         </Routes>
 

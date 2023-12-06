@@ -15,7 +15,7 @@ const Navbar = () => {
       {/*item a*/}
       <div className="hidden md:flex space-x-4 flex-wrap mx-2 p-8">
         <NavLink
-          to="/home"
+          to="/"
           className="text-light bg-success border-r border-solid border-gray-600 py-2 px-3 font-bold
            uppercase transition-colors hover:bg-blue-500 hover:text-white rounded-tr-2xl rounded-bl-2xl"
         >
