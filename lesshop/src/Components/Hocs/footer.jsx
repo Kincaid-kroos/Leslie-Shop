@@ -1,7 +1,13 @@
+
 import { Link, NavLink } from "react-router-dom";
+import '../Styles/moving.css';
+import './data.jsx';
+import footerData from "./data.jsx";
 
 const Footer = () => {
   const timeline = new Date().getFullYear();
+
+
  
   return (
     <footer className="bg-[#0f0f2f] text-[#e7dede] mx-3">
@@ -30,11 +36,39 @@ const Footer = () => {
       </div>
 
   
-      <div className="flex flex-col md:mx-20 items-center text-[#c9c1bd] mt-10 ">
+      <div className="flex flex-col md:mx-20 items-center text-[#80706a] mt-10 ">
         Copyright©{timeline}: || All rights reserved
       </div>
-    </footer>
+
+      
+        <div className=" text-white overflow-hidden bg-[#0f0b24]">
+          <ul className="animate-move space-x-16 md:space-x-12 p-2" style={{ width: '100%', display: 'flex' }}>
+            {footerData.map((data, index) => (
+              <li key={index} className="">
+                <div className="flex space-x-1">
+                <img className="h-7 w-7" src={data.img} alt={`bitcoin-${index}`}/>
+                  <b className="flex flex-nowrap space-x-4">
+                    <div rel="noopener noreferrer"   className="flex flex-nowrap" >
+                      {data.nameA} <span>{data.nameB}</span>
+                    </div>
+                    <span className="flex">{data.valuewallet}</span>
+                  </b>
+
+                  
+                 
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </footer>
   );
 };
 
 export default Footer;
+
+
+
+
+
