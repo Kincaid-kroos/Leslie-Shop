@@ -2,7 +2,7 @@
 
 const Guide = () => {
   return (
-    <div><h2>kinnnnnnnnnnnnnn</h2></div>
+    <div><h2>kin</h2></div>
   )
 }
 
