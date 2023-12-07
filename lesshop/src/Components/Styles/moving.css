@@ -1,0 +1,21 @@
+@keyframes move {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-move {
+    display: flex; 
+    animation: move 20s linear infinite;
+  }
+  @media screen and (max-width: 600px) {
+    .animate-move {
+        display: flex; 
+        animation: move 10s linear infinite;
+    }
+  }
+
+  
