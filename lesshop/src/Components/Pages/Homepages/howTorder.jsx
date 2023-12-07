@@ -13,7 +13,7 @@ const howTorder = () => {
        </h4>
        
 
-       <h4 className="mt-4 btn btn-outline-success btn-block text-white ">STEP 2. On payment page, view order, check the amount for the product, note minimum deposit required is $150.</h4>
+       <h4 className="mt-4 btn btn-outline-success btn-block text-white ">STEP 2. On payment page, view order, check the amount for the product.</h4>
 
        <h4 className="mt-4 btn btn-outline-success btn-block text-white">STEP 3. Copy address or scan QR code and pay the amount required or what is mentioned on the payment page</h4>
        <p className="mt-4 btn btn-outline-success btn-block text-white">NOTE: PAYMENT MODE ACCEPTED IS VIA BITCOIN ONLY</p>
