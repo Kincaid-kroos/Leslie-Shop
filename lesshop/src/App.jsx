@@ -5,10 +5,10 @@ import TopItems from './Components/Hocs/topItems.jsx';
 import Navbar from './Components/Hocs/navbar.jsx';
 
 import Home from './Components/Pages/Homepages/home.jsx';
-import About from './Components/Pages/Homepages/About.jsx';
-
+import About from './Components/Pages/Homepages/about.jsx';
+import Guide from './Components/Pages/Homepages/guide.jsx';
 import HowToOrder from './Components/Pages/Homepages/howTorder.jsx';
-import Rules from './Components/Pages/Homepages/Rules.jsx';
+import Rules from './Components/Pages/Homepages/rules.jsx';
 import Shop from './Components/Pages/Homepages/shop.jsx';
 
 import Add from './Components/Pages/Purchasepages/add.jsx';
@@ -30,7 +30,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-         
+          <Route path='/guide' element={<Guide />} />
           <Route path='/how-to-order' element={<HowToOrder />} />
           <Route path='/rules' element={<Rules />} />
           <Route path='/shop' element={<Shop />} />
