@@ -18,7 +18,7 @@ const howTorder = () => {
 
        <h4 className="mt-4 btn btn-outline-success btn-block text-white">STEP 4. Wait for complete confirmation of the blockchain, then refresh the browser and check your account balance.</h4>
 
-       <h4 className="mt-4 btn btn-outline-success  text-white">STEP 5. Once you've added balance, your order will be processed successfully. Then click download and paste your receiving email.</h4>
+       <h4 className="mt-4 btn btn-outline-success  text-white">STEP 5. Once you&apos;ve added balance, your order will be processed successfully. Then click download and paste your receiving email.</h4>
 
        <h4 className="text-danger btn btn-outline-success active text-white">If you need any help on how to order, simply chat support via the website chatbot</h4>
        </div>
