@@ -2,7 +2,9 @@
 
 const About = () => {
   return (
-    <div className="btn btn-primary">About</div>
+    <div>
+      <h1>hello Kincaid</h1>
+    </div>
   )
 }
 
