@@ -35,13 +35,7 @@ const Navbar = () => {
         >
           About Our Shop
         </Link>
-        <Link
-          to="/guide"
-          className="bg-warning border-r border-solid border-gray-600 py-2 px-3 font-bold 
-          uppercase transition-colors hover:bg-blue-500 hover:text-white rounded-tr-2xl rounded-bl-2xl"
-        >
-          Guide
-        </Link>
+       
         <Link
           to="/rules"
           className="bg-danger text-light border-r border-solid border-gray-600 py-2 px-3 font-bold
@@ -51,7 +45,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/how-to-order"
-          className="bg-dark border-r border-solid border-gray-600 py-2 px-3 font-bold
+          className="bg-warning border-r border-solid border-gray-600 py-2 px-3 font-bold
            uppercase transition-colors hover:bg-blue-500 hover:text-white rounded-tr-2xl rounded-bl-2xl"
         >
           How to Order
@@ -91,13 +85,7 @@ const Navbar = () => {
           >
             About Our Shop
           </Link>
-          <Link
-            to="/guide"
-            className="bg-warning border-r border-solid border-gray-600 py-2 px-3 font-bold 
-            rounded-tr-2xl rounded-bl-2xl uppercase transition-colors hover:bg-blue-500 hover:text-white"
-          >
-            Guide
-          </Link>
+          
           <Link
             to="/rules"
             className="bg-dark text-light border-r border-solid border-gray-600 py-2 px-3 font-bold 
@@ -107,7 +95,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/how-to-order"
-            className="bg-danger border-r border-solid border-gray-600 py-2 px-3 font-bold
+            className="bg-warning border-r border-solid border-gray-600 py-2 px-3 font-bold
             rounded-tr-2xl rounded-bl-2xl  uppercase transition-colors hover:bg-blue-500 hover:text-white"
           >
             How to Order
