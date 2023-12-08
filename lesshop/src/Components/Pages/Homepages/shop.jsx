@@ -5,9 +5,9 @@ const Shop = () => {
     <div>
       <h1 className="text-center text-[#ff3f19] underline">Products</h1>
 
-
+    
       <div className="m-4 p-5">
-        <div className="product-container border-[2px] ">
+        <div className="border-[2px] ">
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
