@@ -15,7 +15,7 @@ const Footer = () => {
         {/* item 1 */}
         <div className="flex flex-col md:mt-0 space-y-2 md:w-1/2">
           <h2 className="font-bold text-[#ff3f19]   text-2xl md:text-2xl lg:text-3xl">The CVV store</h2>
-          <p>The best online store for online services</p>
+          <p>We offer quality and affordable products <br/>Shop with us now</p>
 
          
         </div>
