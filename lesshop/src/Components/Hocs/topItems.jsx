@@ -14,31 +14,34 @@ const TopItems = () => {
   }
   
   return (
-    <div className=' pt-4 mx-3 md:mx-5'>
+    <div className=' pt-4 mx-3 sm:mx-3'>
       <div className="bg-green-600 flex justify-end p-3 border-t-8 border-blue-900 border-solid
-       rounded-tl-md rounded-tr-md space-x-2 sm:space-x-1">
-         <Link to="/cart" className="btn text-white btn-warning text-sm sm:text-base">
-          Current Orders
-          </Link>
+       rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4">
+          <Link to="/cart" className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-semibold bg-success
+            no-underline ">
+      Current Orders
+    </Link>
 
+    <Link to="/balance" className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
+     text-sm sm:text-base  no-underline ">
+      Add Balance
+    </Link>
 
-          <Link to="/balance" className="btn btn-success text-sm sm:text-base">
-             Add Balance
-          </Link>
+    <Link to="/history" className=" border  rounded text-white text-center font-semibold
+    py-2 px-1  bg-[#524fd4]  no-underline  ">
+      Purchase History
+    </Link>
 
-          <Link to="/history" className="btn btn-primary text-sm sm:text-base">
-            Purchase History
-          </Link>
-
-          <div to="/register" className="btn btn-danger text-sm sm:text-base" onClick={modalhandler}>
-               Register
-           </div>
+    <div to="/register" className=" border  rounded text-white justify-center text-center font-semibold
+    py-2 px-2 bg-danger  no-underline  " onClick={modalhandler}>
+      Register
+    </div>
  
 
     
       {modal && (
         <div
-          className={`modal fade show `}
+          className={`modal fade show`}
           tabIndex="-1"
           role="dialog"
           style={{ display: 'block' }}

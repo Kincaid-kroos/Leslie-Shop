@@ -1,8 +1,8 @@
-import { FaStar, FaShoppingBag } from 'react-icons/fa'; // Import icons from Font Awesome
+import { FaStar, FaShoppingBag } from 'react-icons/fa';
 
 const Shop = () => {
   return (
-    <div>
+    <div className='bg-[#0A1929]   mx-3'>
       <h1 className="text-center text-[#ff3f19] underline">Products</h1>
 
     
