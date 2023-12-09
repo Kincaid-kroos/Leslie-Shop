@@ -3,9 +3,9 @@
 const howTorder = () => {
   return (
     
-  <div className="flex sm:flex-col  mx-3 bg-dark">
+  <div className="flex sm:flex-col  mx-3  bg-[#0A1929] ">
                 
-        <div className="container  bg-dark  items-start" >
+        <div className="container   bg-[#0A1929]   items-start" >
        <h2 className="text-[#ff3f19] mt-2">How to Place Orders on Our Products</h2>
       <div className="mt-1 py-6">
        <h4 className="btn btn-outline-success btn-block text-white mt-2">STEP 1. Choose product you want to buy or order AND CLICK BUY to Proceed</h4>

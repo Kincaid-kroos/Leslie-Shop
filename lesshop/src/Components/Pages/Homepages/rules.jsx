@@ -2,7 +2,7 @@
 
 const Rules = () => {
   return (
-    <div className=" bg-dark text-white mx-3 md:pl-6">
+    <div className="bg-[#0A1929]  text-white mx-3 md:pl-6">
     <h4 className="text-[#ff3f19]">
       Important notice
     </h4>
