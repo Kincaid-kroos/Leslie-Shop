@@ -6,7 +6,7 @@ import Navbar from './Components/Hocs/navbar.jsx';
 
 import Home from './Components/Pages/Homepages/home.jsx';
 import HowToOrder from './Components/Pages/Homepages/howTorder.jsx';
-import Rules from './Components/Pages/Homepages/rules.jsx';
+import Rules from './Components/Pages/Homepages/Rules.jsx';
 import Shop from './Components/Pages/Homepages/shop.jsx';
 import About from './Components/Pages/Homepages/About.jsx';
 

@@ -14,9 +14,4 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background: url('../Components/images/bg0.jpg');
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
+

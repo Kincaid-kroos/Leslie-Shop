@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { FaStar, FaShoppingBag } from 'react-icons/fa';
+import { BsArrowRight } from "react-icons/bs";
 
 
 const Shop = () => {
