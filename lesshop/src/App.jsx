@@ -6,7 +6,7 @@ import Navbar from './Components/Hocs/navbar.jsx';
 
 import Home from './Components/Pages/Homepages/home.jsx';
 import HowToOrder from './Components/Pages/Homepages/howTorder.jsx';
-import Rules from './Components/Pages/Homepages/Rules.jsx';
+import Rules from './Components/Pages/Homepages/rules.jsx';
 import Shop from './Components/Pages/Homepages/shop.jsx';
 import About from './Components/Pages/Homepages/About.jsx';
 
@@ -29,9 +29,9 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/how-to-order' element={<HowToOrder />} />
-          <Route path='/rules' element={<Rules />} />
           <Route path='/about' element={<About />} />
           <Route path='/shop' element={<Shop />} />
+          <Route path='/rules' element={<Rules />} />
           <Route path='/balance' element={<Add />} />
           <Route path='/cart' element={<Current />} />
           <Route exact path='/history' element={<Purchase />} />
