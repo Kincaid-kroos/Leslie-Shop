@@ -3,7 +3,7 @@
 const Rules = () => {
   return (
     <div className="bg-[#0A1929]  text-white mx-3 md:pl-6">
-    <h4 className="text-[#ff3f19]">
+    <h4 className="text-[#ff3f19] pt-3">
       Important notice
     </h4>
     <ul>
