@@ -16,7 +16,7 @@ const TopItems = () => {
   return (
     <div className=' pt-4 mx-3 sm:mx-3'>
       <div className="bg-green-600 flex justify-end p-3 border-t-8 border-blue-900 border-solid
-       rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4">
+       rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4 ">
           <Link to="/cart" className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-semibold bg-success
             no-underline ">
       Current Orders
@@ -49,30 +49,30 @@ const TopItems = () => {
           <div className="modal-dialog bg-[#42d15a]" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title text-[#0f0f2f]">Login/Register</h5>
+                <h5 className="modal-title text-[#ff3f19]">Login/Register</h5>
                 <button
                   type="button"
-                  className="btn-close"
+                  className="btn-close btn btn-success"
                   aria-label="Close"
                   onClick={closeModal}
                 ></button>
               </div>
-              <div className="modal-body bg-[#cfd142]">
+              <div className="modal-body bg-[#0A1929]">
                 <form>
                   <div className="mb-3">
-                    <label className='text-[#000000]'>Email</label>
+                    <label className='text-success font-bold'>Email</label>
                     <input
                       type="email"
-                      className="form-control"
+                      className="form-control "
                       aria-describedby="emailHelp"
                       placeholder='lucas@gmail.com'
                     />
-                    <div id="emailHelp" className="form-text text-[#0f0f2f]">
+                    <div id="emailHelp" className="form-text text-white">
                       We`ll never share your email with anyone else.
                     </div>
                   </div>
                   <div className="mb-3">
-                    <label className='text-[#000000]'>Password</label>
+                    <label className='text-success font-bold'>Password</label>
                     <input
                       type="password"
                       className="form-control"
@@ -83,19 +83,19 @@ const TopItems = () => {
                       type="checkbox"
                       className="form-check-input"
                     />
-                    <label className="form-check-label text-[#0f0f2f]">Check me out</label>
+                    <label className="form-check-label text-white">Check me out</label>
                   </div>
                 </form>
               </div>
               <div className="modal-footer">
                 <button
                   type="button"
-                  className="btn btn-secondary"
+                  className="btn btn-danger"
                   onClick={closeModal}
                 >
                   Close
                 </button>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-success">
                   Submit
                 </button>
               </div>

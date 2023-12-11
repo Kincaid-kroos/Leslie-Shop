@@ -1,13 +1,18 @@
+import { NavLink } from 'react-router-dom';
 import { FaStar, FaShoppingBag } from 'react-icons/fa';
+
 
 const Shop = () => {
   return (
     <div className='bg-[#0A1929]   mx-3'>
       <h1 className="text-center text-[#ff3f19] ">Products</h1>
 
-    
-      <div className="m-4 p-5">
-        <div className="border-[2px] ">
+    {/*flex items*/}
+    <div className='flex flex-col items-center justify-center sm:flex-row flex-wrap space-x-8'>
+        {/*flex items A*/}
+
+        
+        <div className=" m-4  border-[1px] "> 
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
@@ -15,9 +20,9 @@ const Shop = () => {
               alt=""
             />
           </div>
-          <small className="name text-white">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
           <br />
-          <div className="rating flex">
+          <div className="pl-2 flex">
             {/* React Icons for stars */}
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
@@ -25,18 +30,20 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
       </div>
-
-
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
+      
+      
+      <div className=" m-4  border-[1px] "> 
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
@@ -44,9 +51,9 @@ const Shop = () => {
               alt=""
             />
           </div>
-          <small className="name text-white">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
           <br />
-          <div className="rating flex">
+          <div className="pl-2 flex">
             {/* React Icons for stars */}
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
@@ -54,209 +61,287 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
       </div>
+
+      
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+      
+      
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+       
+       
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className=" m-4  border-[1px] "> 
+          <div className="image">
+            <img
+              className="h-[150px] w-[200px]"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+
+
+
+  
+
      
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-
-
-
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
-      </div>
-
-
-
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
-      </div>
-
-
-
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
-      </div>
-
-
-
-      <div className="product-list m-4 p-5">
-        <div className="product-container ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex bg-[#0A1929]">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]  " />
-            Click to Buy
-          </a>
-        </div>
-      </div>
-
-
-      <div className="m-4 p-5">
-        <div className="border-[2px] ">
-          <div className="image">
-            <img
-              className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
-            />
-          </div>
-          <small className="name text-white">WOODFOREST BANK</small>
-          <br />
-          <div className="rating flex">
-            {/* React Icons for stars */}
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-          <p className="price text-white">$750.00</p>
-          <a href="https://hng01.shop/single_product/49" className="btn btn-outline-primary flex">
-            {/* React Icons for shopping bag */}
-            <FaShoppingBag className="animate-bounce text-[#b7db38]" />
-            Click to Buy
-          </a>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Home = () => {
         {/* Item A */}
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white">Welcome to CVV store</h1>
-          <p className="text-[#7fce4b] font-bold mb-2">We provide a safe guide on how to use every product</p>
+          <p className="text-[#506145] font-bold mb-2">We provide a safe guide on how to use every product !!!</p>
           <p className="text-[#706767] font-semibold">We are happy to see you here!</p>
         
           <button className="py-2 px-4 bg-[#ff3f19] text-white rounded-full mt-4 hover:bg-[#121530] transition duration-300 ease-in-out">
@@ -45,7 +45,10 @@ const Home = () => {
 
 
   {/* Products  start*/}
+  <div className='bg-[#0A1929] mx-3'>
+  <h2 className="text-center text-[#ff3f19] pt-2">Latest Products</h2>
 
+  </div>
   {/* Products  end*/}
 
     </div>
