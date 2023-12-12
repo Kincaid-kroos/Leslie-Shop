@@ -7,14 +7,14 @@ const Home = () => {
   return (
     <div>
 
-      <div className="bg-[#0f0f0f] mx-3">
+      <div className="bg-[#0f0f0f] mx-3 ">
         {/* Item A */}
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white">Welcome to CVV store</h1>
           <p className="text-[#a1923e] font-bold mb-2">A safe guide on how to use every product is available !!!</p>
           <p className="text-[#706767] font-semibold">We are happy to see you here!</p>
         
-          <button className="py-2 px-4 bg-[#ff3f19] text-white rounded-full mt-4 hover:bg-[#121530] transition duration-300 ease-in-out">
+          <button className="py-2 px-4 bg-[#ff3f19] text-white animate-bounce rounded-full mt-4  hover:bg-[#b7db37]  transition duration-300 ease-in-out">
             <span className="font-bold">Go shopping --&gt;</span>
           </button>
         </div>
@@ -47,6 +47,7 @@ const Home = () => {
 
 
   {/* Products  start*/}
+  <main className='bg-[#0f0f0f] mx-3 mb-0'>
   <div className='bg-[#0f0f0f] mx-3 items-center'>
   <h2 className="text-center text-[#ff3f19] pt-2 pb-2 underline">Latest Products</h2>
  
@@ -56,7 +57,7 @@ const Home = () => {
         {/*flex items A*/}
 
     
-        <div className=" m-4  border-[1px]  rounded "> 
+        <div className=" m-4  border-[1px]  rounded-lg "> 
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
@@ -149,9 +150,9 @@ const Home = () => {
       </div>
    
    </div>
-  <div className='flex justify-center m-4 pb-8'>
-   <NavLink to="/shop" className="py-2 px-4 bg-[#ff3f19] text-white  hover:bg-[#69cc56] 
-       transition duration-300 ease-in-out rounded-tr-3xl rounded-bl-3xl no-underline">
+  <div className='flex justify-center m-4 pb-12'>
+   <NavLink to="/shop" className="py-2 px-4 bg-[#ff3f19] text-white  hover:bg-[#b7db37] 
+       transition duration-300 ease-in-out rounded-tr-3xl rounded-bl-3xl no-underline animate-bounce">
             <span className="font-bold">Click For More --&gt;</span>
           </NavLink>
           </div>
@@ -159,9 +160,60 @@ const Home = () => {
   {/* Products  end*/}
 
   {/*Testimonials start*/}
-  <div>
+  
+    {/*  Container to heading */}
+      <div className=" px-5 text-center">
+        {/*Heading*/} 
+        <h2 className="font-bold text-center text-[#ff3f19] md:pt-4">
+          Customer Reviews?
+        </h2>
+         {/*Testimonials Container*/} 
+        <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
+          {/*Testimonial a*/}
+          <div className="flex flex-col items-center justify-center p-6 space-y-6 rounded-lg  md:w-1/3">
+            <img src="img/avatar-anisha.png" className="w-16 -mt-14" alt="" />
+            <h5 className="text-lg font-bold text-[#ff3f19]">Anna Whitetaker</h5>
+            <p className="text-sm text-[#ffffff]">
+              “CVV Shop has supercharged our teams workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
 
-  </div>
+           {/*Testimonial a*/}
+          <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
+            <img src="img/avatar-ali.png" className="w-16 -mt-14" alt="" />
+            <h5 className="text-lg font-bold text-[#ff3f19]">Ali Hussein</h5>
+            <p className="text-sm text-[#ffffff]">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
+
+           {/*Testimonial c*/}
+          <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
+            <img src="" className="w-16 -mt-14" alt="" />
+            <h5 className="text-lg font-bold text-[#ff3f19]">Richard Watts</h5>
+            <p className="text-sm text-[#ffffff]">
+              “Manage has supercharged our teams workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+        </div>
+        
+        <div className="my-16 p-12">
+          <NavLink
+            to="/shop"
+            className="p-3 px-6 text-white bg-[#ff3f19] rounded animate-bounce font-semibold
+             no-underline hover:bg-[#b7db37]"
+            >Get Started</NavLink >
+        </div>
+
+      </div>
+      </main>
+    
    {/*Testimonials end*/}
 
     </div>
