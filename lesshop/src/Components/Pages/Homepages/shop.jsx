@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { FaStar, FaShoppingBag } from 'react-icons/fa';
-import { BsArrowRight } from "react-icons/bs";
+
 
 
 const Shop = () => {
@@ -48,11 +48,11 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">CITI BANK</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -79,11 +79,11 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/product/1697541035.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">USA CVV</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -110,11 +110,11 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/Logscategory/1697456459.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">Bank of America</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -124,7 +124,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$62.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
