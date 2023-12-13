@@ -47,7 +47,7 @@ const Home = () => {
 
 
   {/* Products  start*/}
-  <main className='bg-[#0f0f0f] mx-3 mb-0'>
+  <main className='bg-[#0f0f0f] mx-3 py-2'>
   <div className='bg-[#0f0f0f] mx-3 items-center'>
   <h2 className="text-center text-[#ff3f19] pt-2 pb-2 underline">Latest Products</h2>
  
@@ -124,7 +124,7 @@ const Home = () => {
             <img
               className="h-[150px] w-[200px]"
               src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
-              alt=""
+              alt="" 
             />
           </div>
           <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
@@ -148,9 +148,12 @@ const Home = () => {
           </NavLink>
           </div>
       </div>
+
+
+      
    
    </div>
-  <div className='flex justify-center m-4 pb-12'>
+  <div className='flex justify-center m-4 pb-12 pt-4'>
    <NavLink to="/shop" className="py-2 px-4 bg-[#ff3f19] text-white  hover:bg-[#b7db37] 
        transition duration-300 ease-in-out rounded-tr-3xl rounded-bl-3xl no-underline animate-bounce">
             <span className="font-bold">Click For More --&gt;</span>
@@ -171,34 +174,33 @@ const Home = () => {
         <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
           {/*Testimonial a*/}
           <div className="flex flex-col items-center justify-center p-6 space-y-6 rounded-lg  md:w-1/3">
-            <img src="img/avatar-anisha.png" className="w-16 -mt-14" alt="" />
-            <h5 className="text-lg font-bold text-[#ff3f19]">Anna Whitetaker</h5>
+            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
+            <h5 className="text-lg font-bold text-[#ff3f19]">Ann Kandie</h5>
             <p className="text-sm text-[#ffffff]">
-              “CVV Shop has supercharged our teams workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
+              “CVV Shop has supercharged my life. Right now i own a few businesses in town
+              and i&apos;m driving my first car”
+            </p> 
           </div>
 
            {/*Testimonial a*/}
           <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
-            <img src="img/avatar-ali.png" className="w-16 -mt-14" alt="" />
+            <img src="https://images.pexels.com/photos/6311585/pexels-photo-6311585.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Ali Hussein</h5>
             <p className="text-sm text-[#ffffff]">
               “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
+              using CVV Shop. There is no more cross-channel confusion and
               everyone is much more focused.”
             </p>
           </div>
 
            {/*Testimonial c*/}
           <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
-            <img src="" className="w-16 -mt-14" alt="" />
-            <h5 className="text-lg font-bold text-[#ff3f19]">Richard Watts</h5>
+            <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
+            <h5 className="text-lg font-bold text-[#ff3f19]">Richard Martin</h5>
             <p className="text-sm text-[#ffffff]">
-              “Manage has supercharged our teams workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
+              “CVV Shop is the ultimate high tech shop. The ability to make the world a little place
+              in terms of the currency access status is what is the most amazing thing. Would recommend 
+              anyone all day”
             </p>
           </div>
         </div>
@@ -208,11 +210,15 @@ const Home = () => {
             to="/shop"
             className="p-3 px-6 text-white bg-[#ff3f19] rounded animate-bounce font-semibold
              no-underline hover:bg-[#b7db37]"
-            >Get Started</NavLink >
+            >Get Started Today</NavLink >
         </div>
 
       </div>
       </main>
+
+      <div className='bg-dark mx-3'>
+        <h></h>
+      </div>
     
    {/*Testimonials end*/}
 
