@@ -203,11 +203,11 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/product/1697540918.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">UK Cvv</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -234,11 +234,11 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/Logscategory/1697537265.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">Paypal Logins</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
