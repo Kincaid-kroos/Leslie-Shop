@@ -75,7 +75,7 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$52.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
@@ -92,11 +92,11 @@ const Home = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/product/1697540918.jpg"
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">UK Cvv</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -106,7 +106,7 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
@@ -123,11 +123,11 @@ const Home = () => {
           <div className="image">
             <img
               className="h-[150px] w-[200px]"
-              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              src="https://hng01.shop/uploads/Logscategory/1697537265.jpg"
               alt="" 
             />
           </div>
-          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <small className="name text-white text-center pl-2">Paypal Logins</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -137,7 +137,7 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$27.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
