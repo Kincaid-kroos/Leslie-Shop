@@ -17,17 +17,17 @@ const TopItems = () => {
     <div className=' pt-4 mx-3 sm:mx-3'>
       <div className="bg-green-600 flex justify-end p-3 border-t-8 border-blue-900 border-solid
        rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4 ">
-          <Link to="/cart" className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-semibold bg-success
+          <Link  className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-semibold bg-success
             no-underline ">
       Current Orders
     </Link>
 
-    <Link to="/balance" className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
+    <Link  className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
      text-sm sm:text-base  no-underline ">
       Add Balance
     </Link>
 
-    <Link to="/history" className=" border  rounded text-white text-center font-semibold
+    <Link  className=" border  rounded text-white text-center font-semibold
     py-2 px-1  bg-[#524fd4]  no-underline  ">
       Purchase History
     </Link>
