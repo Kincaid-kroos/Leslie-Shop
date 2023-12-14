@@ -81,7 +81,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/home" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -112,7 +112,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/home" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -143,7 +143,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/balance" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/home" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
