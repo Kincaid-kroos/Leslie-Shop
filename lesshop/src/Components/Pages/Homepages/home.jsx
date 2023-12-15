@@ -174,7 +174,7 @@ const Home = () => {
         <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
           {/*Testimonial a*/}
           <div className="flex flex-col items-center justify-center p-6 space-y-6 rounded-lg  md:w-1/3">
-            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
+            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Ann Kandie</h5>
             <p className="text-md  text-[#ffffff]">
             “CVV Shop is the ultimate high tech modern shop. The ability to make the world a little place
@@ -186,7 +186,7 @@ const Home = () => {
 
            {/*Testimonial a*/}
           <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
-            <img src="https://images.pexels.com/photos/6311585/pexels-photo-6311585.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
+            <img src="https://images.pexels.com/photos/6311585/pexels-photo-6311585.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Ali Hussein</h5>
             <p className="text-md text-[#ffffff]">
               “We have been able to cancel so many other subscriptions since
@@ -197,7 +197,7 @@ const Home = () => {
 
            {/*Testimonial c*/}
           <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
-            <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-lg" alt="" />
+            <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Richard Martin</h5>
             <p className="text-md text-[#ffffff]">
             “CVV Shop has supercharged my life. Right now i own a few businesses in town

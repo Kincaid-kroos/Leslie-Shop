@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
 
   
-      <div className="flex flex-col md:mx-20 items-center text-[#80706a] mt-10 ">
+      <div className="flex flex-col md:mx-20 items-center text-[#ffffff] mt-10 ">
         Copyright©{timeline}: || All rights reserved
       </div>
 
