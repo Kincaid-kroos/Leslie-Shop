@@ -53,7 +53,7 @@ const Home = () => {
  
 
  {/*flex items*/}
- <div className='grid grid-cols-2 lg:grid-cols-5 md:mx-20 gap-x-4 gap-y-8 items-center justify-between'>
+ <div className='grid grid-cols-2 lg:grid-cols-4 md:mx-20 gap-x-4 gap-y-8 items-center justify-between'>
         {/*flex items A*/}
 
         <div className="border  hover:scale-105 duration-300 "> 
@@ -199,6 +199,37 @@ const Home = () => {
             <FaStar className='text-[#ffffff]' />
           </div>
           <p className="price text-white pl-2">$72.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+
+      <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697537265.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">Paypal Logins</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$17.50</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
