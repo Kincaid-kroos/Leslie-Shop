@@ -49,7 +49,7 @@ const TopItems = () => {
           <div className="modal-dialog bg-[#42d15a]" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title text-[#ff3f19]">Login/Register</h5>
+                <h5 className="modal-title text-[#ff3f19]">Sign Up</h5>
                 <button
                   type="button"
                   className="btn-close btn btn-success"
@@ -59,6 +59,14 @@ const TopItems = () => {
               </div>
               <div className="modal-body bg-[#0A1929]">
                 <form>
+                <div className="mb-3">
+                    <label className='text-success font-bold'>Username</label>
+                    <input
+                      type="email"
+                      className="form-control "
+                      placeholder='Kevin Owen'
+                    />
+                  </div>
                   <div className="mb-3">
                     <label className='text-success font-bold'>Email</label>
                     <input
@@ -71,6 +79,7 @@ const TopItems = () => {
                       We`ll never share your email with anyone else.
                     </div>
                   </div>
+                 
                   <div className="mb-3">
                     <label className='text-success font-bold'>Password</label>
                     <input
