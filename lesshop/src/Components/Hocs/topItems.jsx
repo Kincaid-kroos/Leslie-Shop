@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom'; 
+import { Link,NavLink } from 'react-router-dom'; 
 
 import { useState  } from 'react';
 
 const TopItems = () => { 
   const [modal,setModal] = useState(false);
+  const [loginModal, setLoginModal] = useState(false)
 
   const closeModal = () => {
     setModal(false)
@@ -11,7 +12,19 @@ const TopItems = () => {
   const modalhandler = () => {
     setModal(true)
 
+  } 
+
+  const modalLogin = () => {
+    setLoginModal(true)
+    setModal(false)
+    
   }
+
+  const closeLogin = () => {
+    setLoginModal(false)
+  }
+
+ 
   
   return (
     <div className=' pt-4 mx-3 sm:mx-3'>
@@ -38,7 +51,60 @@ const TopItems = () => {
     </div>
  
 
-    
+       
+    {loginModal && (
+        <div
+          className={`modal fade show`}
+          tabIndex="-1"
+          role="dialog"
+          style={{ display: 'block' }}
+        >
+          <div className="modal-dialog bg-[#42d15a]" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title text-[#ff3f19]">Sign In</h5>
+                <button
+                  type="button"
+                  className="btn-close btn btn-success"
+                  aria-label="Close"
+                  onClick={closeLogin}
+                ></button>
+              </div>
+              <div className="modal-body bg-[#0A1929]">
+                <form>
+                  <div className="mb-3">
+                    <label className='text-success font-bold'>Email</label>
+                    <input
+                      type="email"
+                      className="form-control "
+                      aria-describedby="emailHelp"
+                      placeholder='masonlucas24@gmail.com'
+                    />
+                  </div>
+                 
+                  <div className="mb-3">
+                    <label className='text-success font-bold'>Password</label>
+                    <input
+                      type="password"
+                      className="form-control"
+                    />
+                  </div>
+                </form>
+           
+                   
+             
+              </div>
+              <div className="modal-footer">
+                <button type="submit" className="btn btn-success">
+                  Sign In
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+}
+
       {modal && (
         <div
           className={`modal fade show`}
@@ -73,7 +139,7 @@ const TopItems = () => {
                       type="email"
                       className="form-control "
                       aria-describedby="emailHelp"
-                      placeholder='lucas@gmail.com'
+                      placeholder='masonlucas24@gmail.com'
                     />
                     <div id="emailHelp" className="form-text text-white">
                       We`ll never share your email with anyone else.
@@ -87,14 +153,14 @@ const TopItems = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="mb-3 form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                    />
-                    <label className="form-check-label text-white">Check me out</label>
-                  </div>
                 </form>
+           
+                   
+             
+              </div>
+              <div className='bg-[#0A1929] pb-3 px-3'>
+              <label className="text-[#68e741] font-bold">Already have an account<span className='text-sucess'>?,</span>  <NavLink onClick={modalLogin}
+                className=""> Sign in</NavLink></label>
               </div>
               <div className="modal-footer">
                 <button
