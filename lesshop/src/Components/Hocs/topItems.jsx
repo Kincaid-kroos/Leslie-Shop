@@ -35,7 +35,7 @@ const TopItems = () => {
       Current Orders
     </Link>
 
-    <Link  className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
+    <Link to="/balance"  className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
      text-sm sm:text-base  no-underline ">
       Add Balance
     </Link>
