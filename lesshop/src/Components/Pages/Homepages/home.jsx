@@ -287,7 +287,7 @@ const Home = () => {
           </div>
 
            {/*Testimonial c*/}
-          <div className="hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
+          <div className="flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3">
             <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Richard Martin</h5>
             <p className="text-md text-[#ffffff]">
