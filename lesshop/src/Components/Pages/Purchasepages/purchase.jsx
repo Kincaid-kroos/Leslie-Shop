@@ -147,13 +147,18 @@ const Purchase = () => {
                 </td>
               </tr>
               <tr className=""> 
-                <td colSpan="6" className="border-t border-white"></td>
+                <td colSpan="6" className="border-t border-white pb-8"></td>
               </tr>
               {/* Add more rows as needed */}
             </tbody>
           </table>
         </div>
       </div>
+      <div className="py-4 flex justify-center ">
+      <button className="rounded-xl bg-[#ff3f19] p-2 text-white font-bold" onClick={() => window.history.back()}>
+          Go Back
+        </button>
+        </div>
     </div>
   );
 };

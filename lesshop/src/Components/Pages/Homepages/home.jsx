@@ -23,23 +23,23 @@ const Home = () => {
 <div className="flex flex-col items-center justify-around space-x-8 mt-3 py-5 md:flex-row">
   {/* Item 1 */}
   <div className="mx-auto mb-4 md:mb-0">
-    <label className= "text-[#ff3f19]/90 font-extrabold text-2xl md:text-3xl lg:text-4xl flex justify-center">43</label>
-    <p className="text-white font-bold text-center">Products Sold</p>
+    <label className= "text-[#ff3f19]/90 font-extrabold text-3xl md:text-3xl lg:text-4xl flex justify-center">43</label>
+    <p className="text-white font-bold text-center text-3xl md:text-3xl lg:text-4xl">Products Sold</p>
   </div>
 
   {/* Item 2 */}
   <div className="mx-auto text-center mb-4 md:mb-0">
-    <label className="text-[#ff3f19]/90 font-extrabold text-2xl md:text-3xl lg:text-4xl flex justify-center">1052</label>
-    <p className="text-white font-bold">Customers</p>
+    <label className="text-[#ff3f19]/90 font-extrabold text-3xl md:text-3xl lg:text-4xl flex justify-center">1052</label>
+    <p className="text-white font-bold text-3xl md:text-3xl lg:text-4xl">Customers</p>
   </div>
 
   {/* Item 3 */}
   <div className="mx-auto text-center">
-    <label className="items-center gap-2 text-[#ff3f19]/90 font-extrabold text-2xl md:text-3xl lg:text-4xl flex justify-center">
+    <label className="items-center gap-2 text-[#ff3f19]/90 font-extrabold text-3xl md:text-3xl lg:text-4xl flex justify-center">
       4.50 <FaStar />
     </label>
   
-    <p className="text-white font-bold">Trusted</p>
+    <p className="text-white font-bold text-3xl md:text-3xl lg:text-4xl">Trusted</p>
   </div>
 </div>
 

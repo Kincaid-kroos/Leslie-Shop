@@ -63,24 +63,24 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="bg-[#0f0f0f] flex flex-col p-4 md:items-center">
+        <div className="bg-[#0f0f0f] flex flex-col p-4 md:items-center ">
           <NavLink
             to="/"
-            className="text-light bg-success border-r border-solid border-gray-600 py-2 px-3 font-bold uppercase 
+            className="text-light bg-success no-underline border-r border-solid border-gray-600 py-2 px-3 font-bold uppercase 
             rounded-tr-2xl rounded-bl-2xl transition-colors hover:bg-blue-500 hover:text-white"
           >
             Home
           </NavLink>
           <Link
             to="/shop"
-            className="text-light bg-primary border-r border-solid border-gray-600 py-2 px-3 font-bold 
+            className="text-light bg-primary no-underline border-r border-solid border-gray-600 py-2 px-3 font-bold 
             rounded-tr-2xl rounded-bl-2xl uppercase transition-colors hover:bg-blue-500 hover:text-white"
           >
             Shop
           </Link>
           <Link
             to="/about"
-            className="bg-info border-r border-solid border-gray-600 py-2 px-3 font-bold uppercase
+            className="bg-info border-r no-underline border-solid border-gray-600 py-2 px-3 font-bold uppercase
             rounded-tr-2xl rounded-bl-2xl  transition-colors hover:bg-blue-500 hover:text-white"
           >
             About Our Shop
@@ -88,14 +88,14 @@ const Navbar = () => {
           
           <Link
             to="/rules"
-            className="bg-dark text-light border-r border-solid border-gray-600 py-2 px-3 font-bold 
-            rounded-tr-2xl rounded-bl-2xl uppercase transition-colors hover:bg-blue-500 hover:text-white"
+            className="bg-dark text-light border-r no-underline border-solid border-gray-600 py-2 px-3 font-bold 
+            rounded-tr-2xl rounded-bl-2xl uppercase transition-colors hover:bg-[#428b2f] hover:text-white"
           >
             Rules
           </Link>
           <Link
             to="/how-to-order"
-            className="bg-warning border-r border-solid border-gray-600 py-2 px-3 font-bold
+            className="bg-warning border-r no-underline border-solid border-gray-600 py-2 px-3 font-bold
             rounded-tr-2xl rounded-bl-2xl  uppercase transition-colors hover:bg-blue-500 hover:text-white"
           >
             How to Order
