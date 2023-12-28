@@ -13,7 +13,7 @@ const Add = () => {
        <div className="md:mx-10 py-2">
         <button
         className="btn blink_me btn-block border-2 border-success text-white py-8 animate-pulse"   style={{fontSize: '1.5rem'}}>
-        Note: Read to understand before making any payment and keep in mind that the payment mode only accepted is TRC 20
+        Note: Read to understand before making any payment and keep in mind that the payment mode only accepted is BTC
        </button>
        </div>
 
@@ -29,7 +29,7 @@ const Add = () => {
           </div>
            {/*b*/}
           <div className="flex flex-col md:flex-row justify-center gap-2 py-2 container">
-            <input type="text" value="12FvGewD34TgpMNq4js99Am4Gus96aWX9q" className="bg-[#ffffff] mx-20 container"/>
+            <input type="text" value="1CS2igFVF3GLGtbXzusVjXLrzw9yxxKFKm" className="bg-[#ffffff] mx-20 container"/>
             <span className="btn btn-success animate-pulse mx-20" //onClick={copyAddress}
             >
               Copy to Clipboard
@@ -62,8 +62,8 @@ const Add = () => {
         <li>Send funds within 20 minutes.</li>
         <li>Make sure to pay the transaction&apos;s fee to get confirmed faster.</li>
         <li>After your transactions get 3 confirmations, your balance will be added to your account automatically.</li>
-        <li>This TRC 20 address will be used to fund your wallet, check.</li>
-        <li>
+        <li>This BTC address will be used to fund your wallet, check.</li>
+        <li className="list-none">
           <b>
             <font color="green">WE ISSUE REFUNDS WITHIN 1-2 hours</font>
           </b>
@@ -74,7 +74,7 @@ const Add = () => {
       <div className="border-2 md:mx-10">
         <p className="text-center" style={{ fontSize: '1.5rem', color: 'yellow' }}>
           Your New payment Invoice will be created after the countdown of this time, and this page will refresh automatically{' '}
-          <span>05:00</span> Minutes!
+          <span>07:00</span> Minutes!
         </p>
       </div>
     </div>
