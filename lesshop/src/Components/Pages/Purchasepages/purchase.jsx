@@ -10,12 +10,12 @@ const Purchase = () => {
           <table className="sm:w-full table-auto">
             <thead>
               <tr>
-                <th className="p-2">Order ID</th>
-                <th className="p-2">Payment Method</th>
-                <th className="p-2">Item Name</th>
-                <th className="p-2">Date</th>
-                <th className="p-2">Price</th>
-                <th className="p-2">Status</th>
+                <th className="p-2 font-extrabold">Order ID</th>
+                <th className="p-2 font-extrabold">Payment Method</th>
+                <th className="p-2 font-extrabold">Item Name</th>
+                <th className="p-2 font-extrabold">Date</th>
+                <th className="p-2 font-extrabold">Price</th>
+                <th className="p-2 font-extrabold">Status</th>
               </tr>
             </thead>
             <tbody className="text-left">
@@ -26,7 +26,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-26 14:49:04</td>
                 <td className="p-2">$85.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -39,7 +39,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-25 17:28:52</td>
                 <td className="p-2">$105.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -52,7 +52,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-25 03:46:10</td>
                 <td className="p-2">$104.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -65,7 +65,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-24 23:14:16</td>
                 <td className="p-2">$63.00</td>
                 <td className="p-2">
-                  <button className="btn btn-warning">Pending</button>
+                  <button className="btn btn-warning text-white font-bold">Pending</button>
                 </td>
               </tr>
               <tr>
@@ -78,7 +78,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-24 02:11:47</td>
                 <td className="p-2">$90.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -91,7 +91,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-23 03:02:42</td>
                 <td className="p-2">$17.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -104,7 +104,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-23 02:37:55</td>
                 <td className="p-2">$67.00</td>
                 <td className="p-2">
-                  <button className="btn btn-warning">Pending</button>
+                  <button className="btn btn-warning text-white font-bold">Pending</button>
                 </td>
               </tr>
               <tr>
@@ -117,7 +117,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-22 22:24:24</td>
                 <td className="p-2">$300.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -130,7 +130,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-22 20:33:14</td>
                 <td className="p-2">$90.00</td>
                 <td className="p-2">
-                  <button className="btn btn-danger">Completed</button>
+                  <button className="rounded-lg bg-[#ff3f19] p-2 text-white font-bold">Completed</button>
                 </td>
               </tr>
               <tr>
@@ -143,7 +143,7 @@ const Purchase = () => {
                 <td className="p-2">2023-10-22 16:31:47</td>
                 <td className="p-2">$17.00</td>
                 <td className="p-2">
-                  <button className="btn btn-warning">Pending</button>
+                  <button className="btn btn-warning text-white font-bold">Pending</button>
                 </td>
               </tr>
               <tr className=""> 
