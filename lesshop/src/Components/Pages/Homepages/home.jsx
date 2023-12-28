@@ -301,7 +301,7 @@ const Home = () => {
         <div className="my-16 p-12 hover:animate-bounce">
           <NavLink
             to="/shop"
-            className="p-3 px-6 text-white bg-[#ff3f19] rounded font-semibold
+            className="p-3 px-6 text-white bg-[#ff3f19] rounded-xl font-semibold
              no-underline hover:bg-[#b7db37]"
             >Get Started</NavLink >
         </div>
