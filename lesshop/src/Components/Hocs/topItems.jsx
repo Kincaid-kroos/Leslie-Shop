@@ -40,7 +40,7 @@ const TopItems = () => {
       Add Balance
     </Link>
 
-    <Link  className=" border  rounded text-white text-center font-semibold
+    <Link to="/history" className=" border  rounded text-white text-center font-semibold
     py-2 px-1  bg-[#524fd4]  no-underline  ">
       Purchase History
     </Link>
