@@ -1,80 +1,381 @@
+import { NavLink } from 'react-router-dom';
+import { FaStar, FaShoppingBag } from 'react-icons/fa';
 
-import { FaStar } from 'react-icons/fa';
 
-const Reviews = () => {
+
+const Shop = () => {
   return (
-    <div className="accordion-item">
-      <h2 className="accordion-header" id="headingThree">
-        <button
-          className="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseThree"
-          aria-expanded="false"
-          aria-controls="collapseThree"
-        >
-          Recent Reviews
-        </button>
-      </h2>
-      <div
-        id="collapseThree"
-        className="accordion-collapse collapse show bg-dark text-white"
-        aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample"
-      >
-        <div className="accordion-body bg-info" style={{ color: 'green' }}>
+    <div className='bg-[#0A1929]   mx-3 pb-8'>
+      <h1 className="text-center text-[#ff3f19] ">Products</h1>
+
+    {/*grid items*/}
+    <div className='grid grid-cols-2 lg:grid-cols-5 md:mx-20 gap-x-4 gap-y-8 items-center justify-between'>
+        {/*grid items A*/}
+
+    
+      <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">CITI BANK</small>
+          <br />
           <div className="pl-2 flex">
+            {/* React Icons for stars */}
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-
-          <i className="fa-solid fa-user"></i> <strong> Jasmine Brown</strong> &gt;
-          <span style={{ color: 'white' }}>
-            Estas son las mejores tarjetas en tor. Ellos son seguros para usar en mi país. Gracias
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <br />
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
 
+      <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">CITI BANK</small>
+          <br />
           <div className="pl-2 flex">
+            {/* React Icons for stars */}
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-
-          <i className="fa-solid fa-user"></i> <strong> Mike Davis</strong> &gt;
-          <span style={{ color: 'white' }}>Placed my monthly order.</span>
-          <br />
-
-          <div className="pl-2 flex">
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#b7db37]' />
-            <FaStar className='text-[#ffffff]' />
-          </div>
-
-          <i className="fa-solid fa-user"></i> <strong> Chris Smith</strong> &gt;
-          <span style={{ color: 'white' }}>
-            I love you people so much and just I love the benefits that go along with being a VIP
-            member on your telegram channel
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <br />
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
 
+      
+      <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/product/1697541035.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">USA CVV</small>
+          <br />
           <div className="pl-2 flex">
+            {/* React Icons for stars */}
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-        </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+      
+      
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456459.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">Bank of America</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$62.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+
+      <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/product/1697541035.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">USA CVV</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+      
+       
+       
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/product/1697540918.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">UK Cvv</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697537265.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">Paypal Logins</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$76.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+      
+      <div className="border  hover:scale-105 duration-300"> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456374.jpg"
+              alt=""
+            />
+          </div>
+          <small className="name text-white text-center pl-2">WOODFOREST BANK</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className="price text-white pl-2">$750.00</p>
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+
+
+
+  
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   );
 };
 
-export default Reviews;
+export default Shop;
