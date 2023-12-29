@@ -1,6 +1,7 @@
 import { FaStar } from 'react-icons/fa';
 import { NavLink,Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
+import Reviews from './Reviews.jsx';
 
 
 const Home = () => {
@@ -259,7 +260,7 @@ const Home = () => {
       <div className=" px-5 text-center">
         {/*Heading*/} 
         <h2 className="font-bold text-center text-[#ff3f19] md:pt-4">
-          Customer Reviews?
+          What is different about CVV?
         </h2>
          {/*Testimonials Container*/} 
         <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
@@ -307,13 +308,16 @@ const Home = () => {
         </div>
 
       </div>
+      <Reviews />
       </main>
+     
 
       <div className='bg-dark mx-3'>
         <h></h>
       </div>
     
    {/*Testimonials end*/}
+  
 
     </div>
   );
