@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { FaStar, FaShoppingBag } from 'react-icons/fa';
+import Reviews from './Reviews.jsx';
 
 
 
@@ -370,10 +371,11 @@ const Shop = () => {
 
 
 
-
+     
 
 
       </div>
+      <Reviews />
     </div>
   );
 };
