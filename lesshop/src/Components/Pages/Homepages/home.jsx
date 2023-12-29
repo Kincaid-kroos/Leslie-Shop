@@ -1,5 +1,5 @@
 import { FaStar } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
 
 
@@ -15,7 +15,7 @@ const Home = () => {
           <p className="text-[#706767] font-semibold">We are happy to see you here!</p>
         
           <button className="py-2 px-4 bg-[#ff3f19] text-white animate-bounce rounded-full mt-4  hover:bg-[#b7db37]  transition duration-300 ease-in-out">
-            <span className="font-bold">Go shopping --&gt;</span>
+           <Link to="/shop" className='no-underline text-white'><span className="font-bold">Go shopping --&gt;</span></Link> 
           </button>
         </div>
 
@@ -80,7 +80,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -111,7 +111,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -142,7 +142,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -173,7 +173,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -204,7 +204,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -235,9 +235,9 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <Link to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
-          </NavLink>
+          </Link>
           </div>
       </div>
 

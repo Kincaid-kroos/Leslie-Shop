@@ -37,7 +37,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -67,7 +67,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -98,7 +98,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -129,7 +129,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -160,7 +160,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -192,7 +192,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -223,7 +223,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -254,7 +254,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -285,7 +285,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -316,7 +316,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -347,7 +347,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
