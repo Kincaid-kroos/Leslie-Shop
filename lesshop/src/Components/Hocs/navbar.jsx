@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const hamburgerClick = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
+    
   };
 
   return (
