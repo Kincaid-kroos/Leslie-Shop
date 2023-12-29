@@ -8,7 +8,7 @@ const Payment = () => {
             Go Back
           </button>
   
-          <h1 className="text-center font-bold text-[#ff3f19] py-2">Wallet Payment Page</h1>
+          <h1 className="text-center font-bold text-[#ff3f19] py-2">Item Payment</h1>
   
          <div className="md:mx-10 py-2">
           <button
@@ -16,6 +16,8 @@ const Payment = () => {
           Note: Read to understand before making any payment and keep in mind that the payment mode only accepted is BTC
          </button>
          </div>
+
+         <h2 className="text-center font-bold text-[#ff3f19] py-2">Amount to pay: <span className="text-[#44d43f]">67$</span></h2>
   
           <div className="border md:mx-32">
             {/*a*/}

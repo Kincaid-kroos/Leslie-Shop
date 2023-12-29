@@ -30,22 +30,22 @@ const TopItems = () => {
     <div className=' pt-4 mx-3 sm:mx-3'>
       <div className="bg-green-600 flex justify-end p-3 border-t-8 border-blue-900 border-solid
        rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4 ">
-          <Link  className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-semibold bg-success
+          <Link  className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-bold bg-success
             no-underline ">
       Current Orders
     </Link>
 
-    <Link to="/balance"  className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-semibold
+    <Link to="/balance"  className=" border  rounded text-white text-center py-2 px-1 bg-[#204b20]  font-bold
      text-sm sm:text-base  no-underline ">
       Add Balance
     </Link>
 
-    <Link to="/history" className=" border  rounded text-white text-center font-semibold
+    <Link to="/history" className=" border  rounded text-white text-center font-bold
     py-2 px-1  bg-[#524fd4]  no-underline  ">
       Purchase History
     </Link>
 
-    <div to="/register" className=" border  rounded text-white justify-center text-center font-semibold
+    <div to="/register" className=" border  rounded text-white justify-center text-center font-bold
     py-2 px-2 bg-danger  no-underline  " onClick={modalhandler}>
       Register
     </div>
@@ -78,7 +78,7 @@ const TopItems = () => {
                       type="email"
                       className="form-control "
                       aria-describedby="emailHelp"
-                      placeholder='masonlucas24@gmail.com'
+                      placeholder='jasonowen24@gmail.com'
                     />
                   </div>
                  
@@ -130,7 +130,7 @@ const TopItems = () => {
                     <input
                       type="email"
                       className="form-control "
-                      placeholder='Kevin Owen'
+                      placeholder='Jason Owen'
                     />
                   </div>
                   <div className="mb-3">
@@ -139,7 +139,7 @@ const TopItems = () => {
                       type="email"
                       className="form-control "
                       aria-describedby="emailHelp"
-                      placeholder='masonlucas24@gmail.com'
+                      placeholder='jasonowen24@gmail.com'
                     />
                     <div id="emailHelp" className="form-text text-white">
                       We`ll never share your email with anyone else.
