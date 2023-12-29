@@ -1,16 +1,18 @@
 
 import { FaStar } from 'react-icons/fa';
+import '../InnerStyle/Reviews.css';
+
 
 const Reviews = () => {
   return (
-    <div className="text-white mx-3">
-      <h2 className="font-bold text-center text-[#ff3f19] ">
+    <div className="text-white mx-3 ">
+      <h2 className="font-bold text-center text-[#ff3f19] pt-2">
           Recent Reviews
         </h2>
       
         <div className='pb-4 md:px-24'>
             {/*item a*/}
-         <div className='py-2'>
+         <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> Ann Kandie</strong> &gt;
           <span className='text-white'>
           I&apos;ve been brainstorming some ways to come up with extra cash working from home.
@@ -25,7 +27,7 @@ const Reviews = () => {
           </div>
           </div>
 
-          <div className='py-2'>
+          <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> Jasmine Brown</strong> &gt;
           <span className='text-white'>
           I do not know what to say. I’m shocked that it works !!! Paid out 67$ for a UK CVV
@@ -39,7 +41,7 @@ const Reviews = () => {
           </div>
           </div>
 
-          <div className='py-2'>
+          <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> No name</strong> &gt;
           <span className='text-white'>
           Simple. Fast. Secure. Easy. 5*****
@@ -53,7 +55,7 @@ const Reviews = () => {
           </div>
           </div>
 
-          <div className='py-2'>
+          <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> Ian Webb</strong> &gt;
           <span className='text-white'>
           i never thought of such a dark web thing, until my guy introduced me to this
@@ -67,7 +69,7 @@ const Reviews = () => {
           </div>
           </div>
 
-          <div className='py-2'>
+          <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> Kevin Kibe</strong> &gt;
           <span className='text-white'>
           I love the way that the delivery is fast
@@ -80,7 +82,8 @@ const Reviews = () => {
             <FaStar className='text-[#ffffff]' />
           </div>
           </div>
-          <div className='py-2'>
+          
+          <div className='py-2 faint rounded-xl px-2'>
           <i className=" font-extrabold"></i> <strong> Mason Ogbenna</strong> &gt;
           <span className='text-white'>
           Just placed my monthly order for the new year
