@@ -30,7 +30,7 @@ const TopItems = () => {
     <div className=' pt-4 mx-3 sm:mx-3'>
       <div className="bg-green-600 flex justify-end p-3 border-t-8 border-blue-900 border-solid
        rounded-tl-md rounded-tr-md space-x-2 sm:space-x-4 ">
-          <Link  className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-bold bg-success
+          <Link to="/cart" className="bg-warning border rounded text-white text-center py-2 px-1 sm:ml-3  font-bold bg-success
             no-underline ">
       Current Orders
     </Link>

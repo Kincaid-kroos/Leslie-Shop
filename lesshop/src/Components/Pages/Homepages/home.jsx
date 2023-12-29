@@ -4,6 +4,7 @@ import { FaShoppingBag } from 'react-icons/fa';
 import Reviews from './Reviews.jsx';
 
 
+
 const Home = () => {
   return (
     <div>
