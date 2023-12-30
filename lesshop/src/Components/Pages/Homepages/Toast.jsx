@@ -4,51 +4,37 @@ const RandomToasts = () => {
   const toastQueue = [
     {
         message: "Free Cashout Methods 100 people are viewing free and working methods 2023",
-    
       },
       {
         message: "Rueben in Madagascar purchased a Spamming Gold Package ",
-        
       },
       {
-        message: "Dumps  100 people are viewing it right now",
-        
-      }
-      
-      ,
+        message: "Dumps  100 people are viewing it right now", 
+      },
       {
         message: "Paypal Log 200 People are viewing it right now ",
-        
       },
       {
         message: "Wes in Andorra purchased a Canada Cvv",
-    
-      }
-      ,
+      },
       {
         message: "Maxwell from Arizon Purchased a Canadian Log",
-        
-      }
-      ,
+      },
       {
         message: "Paid Tutorials 3 people just purchased a Tutorial an hour ago ",
         
       },
       {
         message: "Brandon in Hawaii purchased a cashapp log",
-        
       },
       {
         message: "Calvin in New York  purchased a WESTERN UNION CARDING METHOD & WORKING BIN",
-        
       },
       {
         message: "James from Arizona viewed a USA BANK LOG",
-        
       },
       {
         message: "Caleb From UK  purchased a WoodForest Bank log",
-    
       }
     
   ];
@@ -85,13 +71,13 @@ const RandomToasts = () => {
 
       setTimeout(() => {
         toastContainer.removeChild(toastElement);
-      }, 5000); // Adjust as needed
+      }, 5000); 
     }
   };
 
   return (
     <div id="toast-container" className="toast-container text-[#55ee50] mx-3 border-2 p-8 bg-[#ffffff]" >
-      {/* Container for displaying toasts */}
+      
     </div>
   );
 };
