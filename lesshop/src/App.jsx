@@ -9,6 +9,7 @@ import HowToOrder from './Components/Pages/Homepages/howTorder.jsx';
 import Rules from './Components/Pages/Homepages/rules.jsx';
 import Shop from './Components/Pages/Homepages/shop.jsx';
 import About from './Components/Pages/Homepages/About.jsx';
+import Toast from './Components/Pages/Homepages/Toast.jsx';
 
 import Add from './Components/Pages/Purchasepages/add.jsx';
 
@@ -39,6 +40,7 @@ const App = () => {
           <Route exact path='/history' element={<Purchase />} />
         </Routes>
 
+        <Toast />
         <Footer />
       </Router>
     </div>
