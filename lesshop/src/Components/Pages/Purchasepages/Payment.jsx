@@ -17,7 +17,7 @@ const Payment = () => {
          </button>
          </div>
 
-         <h2 className="text-center font-bold text-[#ff3f19] py-2">Amount to pay: <span className="text-[#44d43f]">67$</span></h2>
+         <h2 className="text-center font-bold text-[#ff3f19] py-2">Amount to pay: <span className="text-[#44d43f]">57$</span></h2>
   
           <div className="border md:mx-32">
             {/*a*/}
