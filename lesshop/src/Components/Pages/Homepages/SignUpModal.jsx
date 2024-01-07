@@ -33,7 +33,7 @@ const SignUpModal = () => {
                   placeholder="jasonmomoa@gmail.com"
                   required
                   className="block w-full rounded-md border-0 py-1.5 bg-white shadow-lg ring-1 ring-inset ring-gray-300
-                   placeholder:text-[#ccc8c8] focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
+                   placeholder:text-[#b1a5a5] text-[#000000]/90 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
                     sm:leading-6"
                 />
               </div>
@@ -48,7 +48,7 @@ const SignUpModal = () => {
                   placeholder="jasonmomoa"
                   required
                   className="block w-full rounded-md border-0 py-1.5 bg-white shadow-lg ring-1 ring-inset ring-gray-300
-                   placeholder:text-[#ccc8c8] focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
+                  placeholder:text-[#b1a5a5] text-[#000000]/90 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
                     sm:leading-6"
                 />
               </div>
