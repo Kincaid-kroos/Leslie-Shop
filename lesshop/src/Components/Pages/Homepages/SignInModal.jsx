@@ -1,7 +1,21 @@
 import { NavLink } from "react-router-dom"
-
+import { useContext } from 'react'
+import AuthContext from "../../../Context/Acontext"
 
 const SignInModal = () => {
+
+  const {loginUser} = useContext(AuthContext)
+  const handleSubmit = e => {
+    e.preventDefault()
+    const email = e.target.email.value
+    const password = e.target.password.value
+
+    email.length > 0 && loginUser(email, password)
+
+    console.log(email)
+    console.log(password)
+   
+  }
 
   
 
@@ -21,7 +35,7 @@ const SignInModal = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-lg leading-6 text-success font-bold">
                 Email address
