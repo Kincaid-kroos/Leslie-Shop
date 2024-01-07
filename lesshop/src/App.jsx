@@ -19,7 +19,9 @@ import Current from './Components/Pages/Purchasepages/current.jsx';
 import Payment from './Components/Pages/Purchasepages/Payment.jsx';
 import { AuthProvider } from './Context/Acontext.jsx';
 //import PrivateRoute from './utils/privateroute.jsx';
-import PrivateRoute from './utils/privateroute.jsx';
+import SignInModal from './Components/Pages/Homepages/SignInModal.jsx';
+import SignUpModal from './Components/Pages/Homepages/SignUpModal.jsx';
+
 
 import './App.css';
 
@@ -41,7 +43,11 @@ const App = () => {
           <Route path='/balance' element={<Add />} />
           <Route path='/cart' element={<Current />} />
           <Route exact path='/history' element={<Purchase />} />
-          <PrivateRoute path='/cart-payment' element={<Payment />} />
+          <Route path='/cart-payment' element={<Payment />} />
+          <Route path='/login' element={<SignInModal/>}/>
+          <Route path='/register' element={<SignUpModal/>}/>
+          
+          
         </Routes>
 
         
