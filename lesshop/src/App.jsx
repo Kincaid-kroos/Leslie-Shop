@@ -17,6 +17,11 @@ import Add from './Components/Pages/Purchasepages/add.jsx';
 import Purchase from './Components/Pages/Purchasepages/purchase.jsx';
 import Current from './Components/Pages/Purchasepages/current.jsx';
 import Payment from './Components/Pages/Purchasepages/Payment.jsx';
+import { AuthProvider } from './Context/Acontext.jsx';
+//import PrivateRoute from './utils/privateroute.jsx';
+import SignInModal from './Components/Pages/Homepages/SignInModal.jsx';
+import SignUpModal from './Components/Pages/Homepages/SignUpModal.jsx';
+
 
 import './App.css';
 
@@ -24,6 +29,7 @@ const App = () => {
   return (
     <div className="app">
       <Router>
+      <AuthProvider> 
         <TopItems />
         <Navbar />
         
@@ -35,13 +41,18 @@ const App = () => {
           <Route path='/shop' element={<Shop />} />
           <Route path='/rules' element={<Rules />} />
           <Route path='/balance' element={<Add />} />
-          <Route path='/cart-payment' element={<Payment />} />
           <Route path='/cart' element={<Current />} />
           <Route exact path='/history' element={<Purchase />} />
+          <Route path='/cart-payment' element={<Payment />} />
+          <Route path='/login' element={<SignInModal/>}/>
+          <Route path='/register' element={<SignUpModal/>}/>
+          
+          
         </Routes>
 
         
         <Footer />
+        </AuthProvider>
       </Router>
     </div>
   );
