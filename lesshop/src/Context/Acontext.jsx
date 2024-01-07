@@ -1,15 +1,13 @@
 import {createContext, useState, useEffect} from "react";
-import jwt_decode from "jwt-decode";
-import {useHistory} from "react-router-dom";
+import * as jwt_decode from "jwt-decode";
+import { useHistory } from "react-router-dom";
 import swal from 'sweetalert2';
 import PropTypes from 'prop-types';
 
 
 const AuthContext = createContext();
 
-AuthProvider.propTypes = {
-    children: PropTypes.node.isRequired,
-  };
+
 
 export default AuthContext
 
@@ -116,9 +114,9 @@ export const AuthProvider = ({ children }) => {
         setAuthTokens(null)
         setUser(null)
         localStorage.removeItem("authTokens")
-        history.push("/login")
+        history.push("/")
         swal.fire({
-            title: "YOu have been logged out...",
+            title: "You have been logged out...",
             icon: "success",
             toast: true,
             timer: 6000,
@@ -152,3 +150,7 @@ export const AuthProvider = ({ children }) => {
     )
 
 }
+
+AuthProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
