@@ -1,6 +1,26 @@
 import { NavLink } from "react-router-dom"
+import { useContext,useState } from 'react'
+import AuthContext from "../../../Context/Acontext"
 
 const SignUpModal = () => {
+
+  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [password1, setPassword1] = useState("")
+
+  const {registerUser} = useContext(AuthContext)
+
+  console.log(email);
+  console.log(username);
+  console.log(password);
+  console.log(password1);
+
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    registerUser(email, username, password, password1)
+  }
 
   
 
@@ -20,7 +40,7 @@ const SignUpModal = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-lg leading-6 text-success font-bold">
                 Email address
@@ -31,6 +51,7 @@ const SignUpModal = () => {
                   type="email"
                   autoComplete="email"
                   placeholder="jasonmomoa@gmail.com"
+                  onChange={e => setEmail(e.target.value)}
                   required
                   className="block w-full rounded-md border-0 py-1.5 bg-white shadow-lg ring-1 ring-inset ring-gray-300
                    placeholder:text-[#b1a5a5] text-[#000000]/90 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
@@ -47,6 +68,7 @@ const SignUpModal = () => {
                   type="text"
                   placeholder="jasonmomoa"
                   required
+                  onChange={e => setUsername(e.target.value)}
                   className="block w-full rounded-md border-0 py-1.5 bg-white shadow-lg ring-1 ring-inset ring-gray-300
                   placeholder:text-[#b1a5a5] text-[#000000]/90 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm
                     sm:leading-6"
@@ -67,6 +89,7 @@ const SignUpModal = () => {
                   type="password"
                   autoComplete="current-password"
                   required
+                  onChange={e => setPassword(e.target.value)}
                   className="block w-full rounded-md border-0 py-1.5 bg-white text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                    placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
@@ -86,6 +109,7 @@ const SignUpModal = () => {
                   type="password"
                   autoComplete="current-password"
                   required
+                  onChange={e => setPassword1(e.target.value)}
                   className="block w-full rounded-md border-0 py-1.5 bg-white text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
                    placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
