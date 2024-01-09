@@ -1,6 +1,10 @@
-
+import { useLocation } from 'react-router-dom';
 
 const Payment = () => {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const amount = searchParams.get('amount') || '0';
+
     return (
       <div className="bg-[#0A1929] mx-3 ">
         <div className="md:mx-10">
@@ -17,7 +21,9 @@ const Payment = () => {
          </button>
          </div>
 
-         <h2 className="text-center font-bold text-[#ff3f19] py-2">Amount to pay: <span className="text-[#44d43f]">57$</span></h2>
+         <h2 className="text-center font-bold text-[#ff3f19] py-2">Amount to pay: <span className="text-[#44d43f]">
+         {amount}
+          </span></h2>
   
           <div className="border md:mx-32">
             {/*a*/}
