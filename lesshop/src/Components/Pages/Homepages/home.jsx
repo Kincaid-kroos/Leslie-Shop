@@ -66,7 +66,7 @@ const Home = () => {
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">Bank of America</small>
+        <small className="name text-white text-center pl-2">Bank of America</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -76,13 +76,13 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$57.00</p>
+          <p className="price text-white pl-2">$62.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$62.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -113,7 +113,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$17.50` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -138,13 +138,13 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$65.00</p>
+          <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -169,13 +169,13 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$27.00</p>
+          <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$57.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -206,7 +206,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -237,7 +237,7 @@ const Home = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <Link to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <Link to={{ pathname: "/cart-payment", search: `?amount=$17.50` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </Link>
           </div>

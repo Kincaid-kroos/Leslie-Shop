@@ -32,13 +32,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -62,13 +62,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -93,13 +93,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$57.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -130,7 +130,7 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$62.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -155,13 +155,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$57.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -187,13 +187,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -218,13 +218,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -249,13 +249,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$57.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -280,13 +280,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$76.00</p>
+          <p className="price text-white pl-2">$17.50</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$17.50` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -311,13 +311,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -342,13 +342,13 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$750.00</p>
+          <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
