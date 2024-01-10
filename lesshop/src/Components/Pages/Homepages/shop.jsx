@@ -32,6 +32,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>10</span> available</p>
           <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -62,6 +63,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>10</span> available</p>
           <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -93,6 +95,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>4</span> available</p>
           <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -124,6 +127,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$62.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -155,6 +159,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>4</span> available</p>
           <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -187,6 +192,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -218,6 +224,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -249,6 +256,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>4</span> available</p>
           <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -280,6 +288,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>21</span> available</p>
           <p className="price text-white pl-2">$17.50</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -311,6 +320,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
@@ -342,6 +352,7 @@ const Shop = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
