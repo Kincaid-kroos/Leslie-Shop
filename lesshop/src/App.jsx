@@ -23,6 +23,7 @@ import SignInModal from './Components/Pages/Homepages/SignInModal.jsx';
 import SignUpModal from './Components/Pages/Homepages/SignUpModal.jsx';
 
 
+
 import './App.css';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Navbar />
         
         
+        
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/how-to-order' element={<HowToOrder />} />
@@ -42,8 +44,9 @@ const App = () => {
           <Route path='/rules' element={<Rules />} />
           <Route path='/cart' element={<Current />} />
           <Route exact path='/history' element={<Purchase />} />
+          <Route path='/cart-payment' element={<Payment />} />
           <Route path='/' element={<PrivateRoute />} >
-             <Route path='/cart-payment' element={<Payment />} />
+           {/* <Route path='/cart-payment' element={<Payment />} />*/}  
              <Route path='/balance' element={<Add />} />
           </Route>
          

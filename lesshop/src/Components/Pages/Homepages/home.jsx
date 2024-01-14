@@ -66,6 +66,7 @@ const Home = () => {
               alt=""
             />
           </div>
+
         <small className=" text-white text-center pl-2">Bank of America</small>
           <br />
           <div className="pl-2 flex">
