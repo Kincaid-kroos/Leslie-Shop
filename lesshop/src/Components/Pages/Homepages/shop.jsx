@@ -5,6 +5,7 @@ import Reviews from './Reviews.jsx';
 
 
 const Shop = () => {
+    
   return (
     <div className='bg-[#0A1929]   mx-3 pb-8'>
       <h1 className="text-center text-[#ff3f19] ">Products</h1>
@@ -39,7 +40,8 @@ const Shop = () => {
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} 
+          className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
