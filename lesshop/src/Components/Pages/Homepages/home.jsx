@@ -2,10 +2,31 @@ import { FaStar } from 'react-icons/fa';
 import { NavLink,Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
 import Reviews from './Reviews.jsx';
+import { useState,useEffect } from 'react';
+import axios from 'axios';
 
 
 
 const Home = () => {
+  const[cart,setCartItems] = useState([])
+
+  const fetchLatest = async () => {
+    try {
+      const res = await axios.get(`http://127.0.0.1:8000/cart/latest/`)
+      console.log('check latest:', res.data);
+      setCartItems(res.data)
+
+    }
+    catch(err) {
+       console.error
+    }
+   
+  }
+  
+  useEffect(() => {
+    fetchLatest();
+  }, []);
+
   return (
     <div>
 
@@ -57,6 +78,45 @@ const Home = () => {
  {/*flex items*/}
  <div className='grid grid-cols-2 lg:grid-cols-4 md:mx-20 gap-x-4 gap-y-8 items-center justify-between'>
         {/*flex items A*/}
+   {/*map items from the backend*/}
+       {cart.map(items => (
+          <div key={items.id} className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src={items.image}
+              alt=""
+            />
+          </div>
+
+        <small className=" text-white text-center pl-2">{items.name}</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
+          <p className="price text-white pl-2">{items.amount}</p>
+        
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$62.00` }} className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       ))
+
+       }
+
 
         <div className="border  hover:scale-105 duration-300 "> 
           <div className="image">
