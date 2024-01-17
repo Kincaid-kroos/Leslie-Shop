@@ -1,29 +1,29 @@
 import { FaStar } from 'react-icons/fa';
 import '../InnerStyle/Reviews.css';
-//import { useState, useEffect } from 'react';
-//import axios from 'axios';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 //const csrfAxios = axios.create();
 //csrfAxios.defaults.xsrfCookieName = 'csrftoken';
 //csrfAxios.defaults.xsrfHeaderName = 'X-CSRFToken';
 
 const Reviews = () => {
-//  const [reviews, setReviews] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
- // const fetchReview = async () => {
-   // try {
-     // const res = await csrfAxios.get(`http://127.0.0.1:8000/reviews/post/`);
-      //console.log('See the review:', res.data);
-      //setReviews(res.data);
-    //} catch (err) {
+  const fetchReview = async () => {
+    try {
+      const res = await axios.get(`http://127.0.0.1:8000/reviews/`);
+      console.log('See the review:', res.data);
+      setReviews(res.data);
+    } catch (err) {
       // Handle error if needed
-      //console.error(err);
-    //}
-  //};
+      console.error(err);
+    }
+  };
 
-  //useEffect(() => {
-    //fetchReview();
-  //}, []);
+  useEffect(() => {
+    fetchReview();
+  }, []);
 
   return (
     <div className="text-white mx-3 ">
@@ -32,10 +32,10 @@ const Reviews = () => {
       </h2>
 
       <div className='pb-4 md:px-24'>
-        {/* Mapping over the reviews 
+        {/* Mapping over the reviews  */}
         {reviews.map((review) => (
           <div key={review.id} className='py-2 faint rounded-xl px-2'>
-            <i className="font-extrabold"></i> <strong>{review.names}</strong> &gt;
+            <i className="font-extrabold"></i> <strong>{review.name}</strong> &gt;
             <span className='text-white'>
               {review.comments}
             </span>
@@ -49,7 +49,7 @@ const Reviews = () => {
             </div>
           </div>
         ))}
-        */}
+       
 
         {/* Other items */}
         <div className='py-2 faint rounded-xl px-2'>
