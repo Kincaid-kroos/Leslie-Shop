@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="md:mx-auto  flex flex-col md:flex-row sm:items-center justify-around items-start px-10 mt-0 md:mt-10 md:space-x-32 space-x-15 space-y-2 md:space-y-0">
         {/* item 1 */}
         <div className="flex flex-col md:mt-0 space-y-2 md:w-1/2">
-          <h2 className="font-bold text-[#ff3f19]   text-2xl md:text-2xl lg:text-3xl">The CVV store</h2>
+          <h2 className="font-bold text-[#ff3f19]   text-2xl md:text-2xl lg:text-3xl">Cvvmarketplace shop</h2>
           <p>We offer quality and affordable products <br/>Shop with us now</p>
 
          

@@ -169,7 +169,7 @@ const Shop = () => {
           </NavLink>
           </div>
       </div>
-      
+        
       
       <div className="border  hover:scale-105 duration-300"> 
           <div className="image">

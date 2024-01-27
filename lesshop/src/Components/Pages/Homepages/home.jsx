@@ -33,7 +33,7 @@ const Home = () => {
       <div className="bg-[#0f0f0f] mx-3 ">
         {/* Item A */}
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-white">Welcome to CVV store</h1>
+          <h1 className="text-4xl font-bold text-white">Welcome to Cvvmarketplace</h1>
           <p className="text-[#a1923e] font-bold mb-2">A safe guide on how to use every product is available !!!</p>
           <p className="text-[#706767] font-semibold">We are happy to see you here!</p>
         
@@ -99,7 +99,7 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>{items.available}</span> available</p>
           <p className="price text-white pl-2">{items.amount}</p>
         
           {/*buy*/}
@@ -329,7 +329,7 @@ const Home = () => {
       <div className=" px-5 text-center">
         {/*Heading*/} 
         <h2 className="font-bold text-center text-[#ff3f19] md:pt-4">
-          What is different about CVV?
+          What is different about our Shop?
         </h2>
          {/*Testimonials Container*/} 
         <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
@@ -338,7 +338,7 @@ const Home = () => {
             <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Ann Kandie</h5>
             <p className="text-md  text-[#ffffff]">
-            “CVV Shop is the ultimate high tech modern shop. The ability to make the world a little place
+            “cvvmarketplace Shop is the ultimate high tech modern shop. The ability to make the world a little place
               in terms of the currency access status is what is the most amazing thing. Would recommend 
               anyone all day”
              
@@ -351,7 +351,7 @@ const Home = () => {
             <h5 className="text-lg font-bold text-[#ff3f19]">Ali Hussein</h5>
             <p className="text-md text-[#ffffff]">
               “We have been able to cancel so many other subscriptions since
-              using CVV Shop. There is no more cross-channel confusion and
+              using cvvmarketplace Shop. There is no more cross-channel confusion and
               everyone is much more focused.”
             </p>
           </div>
@@ -361,7 +361,7 @@ const Home = () => {
             <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Richard Martin</h5>
             <p className="text-md text-[#ffffff]">
-            “CVV Shop has supercharged my life. Right now i own a few businesses in town
+            “cvvmarketplace Shop has supercharged my life. Right now i own a few businesses in town
               and i&apos;m driving my first car”
              
             </p>

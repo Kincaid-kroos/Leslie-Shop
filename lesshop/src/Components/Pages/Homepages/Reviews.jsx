@@ -39,13 +39,12 @@ const Reviews = () => {
             <span className='text-white'>
               {review.comments}
             </span>
-            <p>{review.date_created}</p>
             <div className="pl-2 flex">
               <FaStar className='text-[#b7db37]' />
               <FaStar className='text-[#b7db37]' />
               <FaStar className='text-[#b7db37]' />
               <FaStar className='text-[#b7db37]' />
-              <FaStar className='text-[#ffffff]' />
+              <FaStar className='text-[#b7db37]' />
             </div>
           </div>
         ))}
