@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import qrcode from './qrcode.jpg';
 
 const Add = () => {
   const [timer, setTimer] = useState(600); 
@@ -30,7 +31,7 @@ const Add = () => {
       setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
     }, 1000);
 
-    // Cleanup the interval when the component unmounts
+    // Cleanup 
     return () => clearInterval(interval);
   }, []);
 
@@ -54,7 +55,7 @@ const Add = () => {
         <div className="border md:mx-32">
           {/*a*/}
           <div className="flex flex-col items-center pt-4 md:flex-row  md:gap-5 md:justify-center">
-            <img className="h-[200px] w-[200px]" src="http://hng01.shop/uploads/wallet/1703292170.jpg" alt="QR code for payment" />
+            <img className="h-[200px] w-[200px]" src={qrcode} alt="QR code for payment" />
             <button className="btn btn-danger animate-pulse" 
             
             >
@@ -108,7 +109,7 @@ const Add = () => {
       <div className="border-2 md:mx-10">
         <p className="text-center" style={{ fontSize: '1.5rem', color: 'yellow' }}>
           Your New payment Invoice will be created after the countdown of this time, and this page will refresh automatically{' '}
-          <span>{`${Math.floor(timer / 60)}:${(timer % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}`}</span> Minutes!
+          <span className='text-[#ff3f19]'>{`${Math.floor(timer / 60)}:${(timer % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}`}</span> Minutes!
         </p>
       </div>
     </div>
