@@ -100,14 +100,20 @@ const Home = () => {
             <FaStar className='text-[#ffffff]' />
           </div>
           <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>{items.available}</span> available</p>
-          <p className="price text-white pl-2">{items.amount}</p>
+          <p className="price text-white pl-2">${items.amount}.00</p>
         
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$62.00` }} className="btn btn-outline-danger flex animate-bounce">
+          <NavLink 
+               to={{
+                pathname: "/cart-payment",
+                search: `?amount=${items.amount}`, 
+                state: { amount: items.amount },
+              }}
+              className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
