@@ -11,7 +11,7 @@ const Shop = () => {
 
   const fetchCartItem = async () => {
     try {
-      const res = await axios.get(`http://127.0.0.1:8000/cart/latest/`)
+      const res = await axios.get(`http://127.0.0.1:8000/cart/`)
       console.log('check latest:', res.data);
       setCartItems(res.data)
 
@@ -43,8 +43,8 @@ const Shop = () => {
         <div className="image">
           <img
             className="h-[120px] w-full object-cover rounded-b-lg"
-            src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
-            alt=""
+            src={items.image}
+            alt="image"
           />
         </div>
         <small className="name text-white text-center pl-2">{items.name}</small>
@@ -57,14 +57,19 @@ const Shop = () => {
           <FaStar className='text-[#b7db37]' />
           <FaStar className='text-[#ffffff]' />
         </div>
-        <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>10</span> available</p>
-        <p className="price text-white pl-2">$68.00</p>
+        <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>{items.available}</span> available</p>
+        <p className="price text-white pl-2">${items.amount}.00</p>
         {/*buy*/}
         <div className='flex items-center gap-4 '>
           <span className='ml-2'>
         <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
         </span>
-        <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} 
+        <NavLink
+        to={{
+          pathname: "/cart-payment",
+          search: `?amount=${items.amount}`, 
+          state: { amount: items.amount },
+        }}
         className="btn btn-outline-danger flex animate-bounce">
               Buy now
         </NavLink>
