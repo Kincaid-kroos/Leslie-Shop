@@ -2,17 +2,38 @@ import { FaStar } from 'react-icons/fa';
 import { NavLink,Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
 import Reviews from './Reviews.jsx';
+import { useState,useEffect } from 'react';
+import axios from 'axios';
 
 
 
 const Home = () => {
+  const[cart,setCartItems] = useState([])
+
+  const fetchLatest = async () => {
+    try {
+      const res = await axios.get(`http://127.0.0.1:8000/cart/latest/`)
+      console.log('check latest:', res.data);
+      setCartItems(res.data)
+
+    }
+    catch(err) {
+       console.error
+    }
+   
+  }
+  
+  useEffect(() => {
+    fetchLatest();
+  }, []);
+
   return (
     <div>
 
       <div className="bg-[#0f0f0f] mx-3 ">
         {/* Item A */}
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-white">Welcome to CVV store</h1>
+          <h1 className="text-4xl font-bold text-white">Welcome to Cvvmarketplace</h1>
           <p className="text-[#a1923e] font-bold mb-2">A safe guide on how to use every product is available !!!</p>
           <p className="text-[#706767] font-semibold">We are happy to see you here!</p>
         
@@ -57,16 +78,18 @@ const Home = () => {
  {/*flex items*/}
  <div className='grid grid-cols-2 lg:grid-cols-4 md:mx-20 gap-x-4 gap-y-8 items-center justify-between'>
         {/*flex items A*/}
-
-        <div className="border  hover:scale-105 duration-300 "> 
+   {/*map items from the backend*/}
+       {cart.map(items => (
+          <div key={items.id} className="border  hover:scale-105 duration-300 "> 
           <div className="image">
             <img
               className="h-[120px] w-full object-cover rounded-b-lg"
-              src="https://hng01.shop/uploads/Logscategory/1697456459.jpg"
+              src={items.image}
               alt=""
             />
           </div>
-          <small className="name text-white text-center pl-2">Bank of America</small>
+
+        <small className=" text-white text-center pl-2">{items.name}</small>
           <br />
           <div className="pl-2 flex">
             {/* React Icons for stars */}
@@ -76,13 +99,59 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$57.00</p>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>{items.available}</span> available</p>
+          <p className="price text-white pl-2">${items.amount}.00</p>
+        
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink 
+               to={{
+                pathname: "/cart-payment",
+                search: `?amount=${items.amount}`, 
+                state: { amount: items.amount },
+              }}
+              className="btn btn-outline-danger flex animate-bounce">
+                Buy now
+          </NavLink>
+          </div>
+      </div>
+
+       ))
+
+       }
+
+
+        <div className="border  hover:scale-105 duration-300 "> 
+          <div className="image">
+            <img
+              className="h-[120px] w-full object-cover rounded-b-lg"
+              src="https://hng01.shop/uploads/Logscategory/1697456459.jpg"
+              alt=""
+            />
+          </div>
+
+        <small className=" text-white text-center pl-2">Bank of America</small>
+          <br />
+          <div className="pl-2 flex">
+            {/* React Icons for stars */}
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#b7db37]' />
+            <FaStar className='text-[#ffffff]' />
+          </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
+          <p className="price text-white pl-2">$62.00</p>
+        
+          {/*buy*/}
+          <div className='flex items-center gap-4 '>
+            <span className='ml-2'>
+          <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
+          </span>
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$62.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -107,13 +176,14 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>21</span> available</p>
           <p className="price text-white pl-2">$17.50</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$17.50` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -138,13 +208,14 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$65.00</p>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>10</span> available</p>
+          <p className="price text-white pl-2">$68.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$68.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -169,13 +240,14 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
-          <p className="price text-white pl-2">$27.00</p>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>4</span> available</p>
+          <p className="price text-white pl-2">$57.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$57.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -200,13 +272,14 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>3</span> available</p>
           <p className="price text-white pl-2">$72.00</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <NavLink to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <NavLink to={{ pathname: "/cart-payment", search: `?amount=$72.00` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </NavLink>
           </div>
@@ -231,13 +304,14 @@ const Home = () => {
             <FaStar className='text-[#b7db37]' />
             <FaStar className='text-[#ffffff]' />
           </div>
+          <p className='text-[#ff3f19] text-md pl-2 my-0 animate-pulse'><span className='text-success'>21</span> available</p>
           <p className="price text-white pl-2">$17.50</p>
           {/*buy*/}
           <div className='flex items-center gap-4 '>
             <span className='ml-2'>
           <FaShoppingBag className="animate-pulse flex text-[#38db53] pl-1" />
           </span>
-          <Link to="/cart-payment" className="btn btn-outline-danger flex animate-bounce">
+          <Link to={{ pathname: "/cart-payment", search: `?amount=$17.50` }} className="btn btn-outline-danger flex animate-bounce">
                 Buy now
           </Link>
           </div>
@@ -261,7 +335,7 @@ const Home = () => {
       <div className=" px-5 text-center">
         {/*Heading*/} 
         <h2 className="font-bold text-center text-[#ff3f19] md:pt-4">
-          What is different about CVV?
+          What is different about our Shop?
         </h2>
          {/*Testimonials Container*/} 
         <div className="flex flex-col mt-24 md:flex-row md:gap-12 md:pt-12">
@@ -270,7 +344,7 @@ const Home = () => {
             <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Ann Kandie</h5>
             <p className="text-md  text-[#ffffff]">
-            “CVV Shop is the ultimate high tech modern shop. The ability to make the world a little place
+            “cvvmarketplace Shop is the ultimate high tech modern shop. The ability to make the world a little place
               in terms of the currency access status is what is the most amazing thing. Would recommend 
               anyone all day”
              
@@ -283,7 +357,7 @@ const Home = () => {
             <h5 className="text-lg font-bold text-[#ff3f19]">Ali Hussein</h5>
             <p className="text-md text-[#ffffff]">
               “We have been able to cancel so many other subscriptions since
-              using CVV Shop. There is no more cross-channel confusion and
+              using cvvmarketplace Shop. There is no more cross-channel confusion and
               everyone is much more focused.”
             </p>
           </div>
@@ -293,7 +367,7 @@ const Home = () => {
             <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" className="-mt-14 w-20 h-20 rounded-full object-cover" alt="" />
             <h5 className="text-lg font-bold text-[#ff3f19]">Richard Martin</h5>
             <p className="text-md text-[#ffffff]">
-            “CVV Shop has supercharged my life. Right now i own a few businesses in town
+            “cvvmarketplace Shop has supercharged my life. Right now i own a few businesses in town
               and i&apos;m driving my first car”
              
             </p>

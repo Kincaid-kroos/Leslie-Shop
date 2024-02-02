@@ -1,6 +1,41 @@
-
+import { useState, useEffect } from 'react';
+import qrcode from './qrcode.jpg';
 
 const Add = () => {
+  const [timer, setTimer] = useState(600); 
+
+
+  
+
+  function copyAddresss() {
+    const btcAddress = '1CS2igFVF3GLGtbXzusVjXLrzw9yxxKFKm';
+    const textarea = document.createElement('textarea');
+    textarea.value = btcAddress;
+
+    document.body.appendChild(textarea);
+    textarea.select();
+  
+    try {
+      document.execCommand('copy');
+      alert('Address Copied: ' + btcAddress);
+    } catch (err) {
+      console.error('Unable to copy: ', err);
+    } finally {
+      document.body.removeChild(textarea);
+    }
+  }
+  
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
+    }, 1000);
+
+    // Cleanup 
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className="bg-[#0A1929] mx-3 ">
       <div className="md:mx-10">
@@ -20,9 +55,9 @@ const Add = () => {
         <div className="border md:mx-32">
           {/*a*/}
           <div className="flex flex-col items-center pt-4 md:flex-row  md:gap-5 md:justify-center">
-            <img className="h-[200px] w-[200px]" src="http://hng01.shop/uploads/wallet/1703292170.jpg" alt="QR code for payment" />
+            <img className="h-[200px] w-[200px]" src={qrcode} alt="QR code for payment" />
             <button className="btn btn-danger animate-pulse" 
-            //onClick={openQrimage}
+            
             >
               Scan QR Image to Pay
             </button>
@@ -30,7 +65,7 @@ const Add = () => {
            {/*b*/}
           <div className="flex flex-col md:flex-row justify-center gap-2 py-2 container">
             <input type="text" value="1CS2igFVF3GLGtbXzusVjXLrzw9yxxKFKm" className="bg-[#ffffff] mx-20 container"/>
-            <span className="btn btn-success animate-pulse mx-20" //onClick={copyAddress}
+            <span className="btn btn-success animate-pulse mx-20" onClick={copyAddresss}
             >
               Copy to Clipboard
             </span>
@@ -41,7 +76,7 @@ const Add = () => {
           <div className="flex items-center justify-center py-2">
             <button
               className="animate-pulse text-white bg-[#30bb4e] rounded-md p-2"
-              //onClick={openQRCodeModalSweetAlert}
+              
             >
               View Log
             </button>
@@ -74,7 +109,7 @@ const Add = () => {
       <div className="border-2 md:mx-10">
         <p className="text-center" style={{ fontSize: '1.5rem', color: 'yellow' }}>
           Your New payment Invoice will be created after the countdown of this time, and this page will refresh automatically{' '}
-          <span>07:00</span> Minutes!
+          <span className='text-[#ff3f19]'>{`${Math.floor(timer / 60)}:${(timer % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}`}</span> Minutes!
         </p>
       </div>
     </div>
