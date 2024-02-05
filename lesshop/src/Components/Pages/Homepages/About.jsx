@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 const About = () => {
   return (
     <div className="bg-[#0A1929] mx-3 pb-4">
-       <h2 className="text-center text-[#ff3f19] pt-2">Simply About CVV shop</h2>
+       <h2 className="text-center text-[#ff3f19] pt-2">Simply About CVVMarketPlace shop</h2>
       <div className="rounded  text-white mt-2 px-3 py-3">
                     <p>Okay so you want to know how to Hack or Cashout money from Credit Cards, Western Union, Cashapp,
                         Paypal, Banklogs, Dumps, WorldRemit, ATM, Online Checks right? Maybe you might have been thinking

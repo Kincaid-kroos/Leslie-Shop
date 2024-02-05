@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <NavLink to="/how-to-order">How to Place Order</NavLink>
             <Link to="/shop">Products</Link>
-            <Link to="/about">What is CVV shop?</Link>
+            <Link to="/about">What is Cvvmarketplace?</Link>
           </div>
         </div>
    
