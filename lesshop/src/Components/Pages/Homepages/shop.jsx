@@ -84,7 +84,7 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[120px] w-full object-cover rounded-b-lg"
-              src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
+              src="https://cdn.pixabay.com/photo/2015/06/01/09/05/facebook-793048_1280.jpg"
               alt=""
             />
           </div>
@@ -116,7 +116,7 @@ const Shop = () => {
           <div className="image">
             <img
               className="h-[120px] w-full object-cover rounded-b-lg"
-              src="https://hng01.shop/uploads/Logscategory/1697456429.jpg"
+              src="https://cdn.pixabay.com/photo/2015/06/01/09/05/facebook-793048_1280.jpg"
               alt=""
             />
           </div>
